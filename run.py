@@ -68,7 +68,7 @@ df = pd.get_dummies(df, columns=['experience_level', 'employment_type', 'company
 base_features = ['remote_ratio', 'work_year', 'job_cluster_nlp']
 one_hot_features = [col for col in df.columns if col.startswith(('experience_', 'employment_', 'company_'))]
 X = df[base_features + one_hot_features]
-df['salary_in_usd'] = df['salary_in_usd'] / 1000  # Convert to thousands
+df['salary_in_usd'] = df['salary_in_usd']  # Convert to thousands
 y = df['salary_in_usd']
 
 
@@ -133,3 +133,14 @@ metrics = pd.DataFrame({
 print(metrics)
 for i, row in metrics.iterrows():
     logging.info(f"{row['Model']} — MAE: {row['MAE']:.5f}, RMSE: {row['RMSE']:.5f}")
+
+import joblib
+
+# Сохраняем векторизатор
+joblib.dump(vectorizer, 'models/job_title_vectorizer.pkl')
+
+# Сохраняем KMeans
+joblib.dump(kmeans, 'models/job_title_kmeans.pkl')
+
+# Сохраняем XGBoost модель
+joblib.dump(xgb_cut, 'models/xgb_model.pkl')
