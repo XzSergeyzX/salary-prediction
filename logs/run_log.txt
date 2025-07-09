@@ -1,0 +1,10 @@
+2025-07-09 10:20:02,856 INFO:Training set size: (109405, 109), Validation set size: (27352, 109)
+2025-07-09 10:20:02,928 INFO:Training Linear Regression...
+2025-07-09 10:20:04,683 INFO:Linear Regression trained in 1.75s
+2025-07-09 10:20:04,683 INFO:Training Random Forest...
+2025-07-09 10:20:07,860 INFO:Random Forest trained in 3.18s
+2025-07-09 10:20:07,860 INFO:Training XGBoost...
+2025-07-09 10:20:08,968 INFO:XGBoost trained in 1.11s
+2025-07-09 10:20:08,979 INFO:Linear Regression — MAE: 0.05001, RMSE: 0.00458
+2025-07-09 10:20:08,979 INFO:Random Forest — MAE: 0.04687, RMSE: 0.00411
+2025-07-09 10:20:08,979 INFO:XGBoost — MAE: 0.04695, RMSE: 0.00411

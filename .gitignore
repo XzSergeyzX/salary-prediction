@@ -3,29 +3,29 @@ __pycache__/
 *.py[cod]
 *.pyo
 
-# Data
+# Logs and pickles
+logs/
+*.log
+
+# Data & models
 data/
 *.csv
 *.tsv
+# models/
 
-# Logs and plots
-*.log
-*.png
-logs/
-
-# Environment
+# Environments
 .env
 .venv/
 env/
 venv/
 *.env
 
-# VS Code
+# VS Code settings
 .vscode/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# System
+# System garbage
 .DS_Store
 Thumbs.db
