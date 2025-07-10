@@ -53,4 +53,4 @@ input_df = input_df[model.feature_names_in_]
 pred = model.predict(input_df)[0]
 st.success(f"💸 Estimated Salary: **{pred:.2f}K USD**")
 
-print(input_df.T)
+# print(input_df.T)
