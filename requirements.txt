@@ -8,3 +8,6 @@ xgboost
 joblib
 streamlit
 gradio
+fastapi
+pydantic
+uvicorn
